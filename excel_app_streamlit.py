@@ -48,7 +48,7 @@ if 'messages' not in st.session_state:
     ]
 
 # Static Excel path for the CIT Alumni Selection document
-excel_path = 'cit_alumni.xlsx'
+excel_path = 'cit_alumni_master.xlsx'
 
 # Process the Excel content
 if os.path.exists(excel_path):
