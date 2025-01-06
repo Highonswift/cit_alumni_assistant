@@ -5,12 +5,13 @@ import pandas as pd
 import streamlit as st
 
 # Function to process specific sheets from an Excel file
-def process_excel(file_path='cit_alumni.xlsx'):
+def process_excel(file_path='cit_alumni_master.xlsx'):
     if not os.path.isfile(file_path):
         raise FileNotFoundError(f"The file {file_path} does not exist.")
     try:
         # Read the specific sheets
-        sheet_names = ["LTM Nos", "Batchwise Alphabetically"]
+        # sheet_names = ["LTM Nos", "Batchwise Alphabetically"]
+        sheet_names = ["Yearwise Alphabetically"]
         excel_data = pd.read_excel(file_path, sheet_name=sheet_names, engine='openpyxl')
         text = ""
         for sheet_name, sheet_data in excel_data.items():
