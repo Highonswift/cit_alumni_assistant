@@ -18,18 +18,9 @@ load_dotenv()
 genai.configure(api_key=os.getenv('API_KEY'))
 
 # Streamlit setup
-st.set_page_config(page_title="CIT Alumni Assistant", page_icon="🎓", layout="wide")
-st.title("CIT Alumni Assistant")
-st.markdown("Ask me anything about CIT Alumni!")
-
-# Display instructions in the sidebar
-st.sidebar.header("Instructions")
-st.sidebar.write(
-    """
-    Enter your prompt in the input box below to interact with the CIT Alumni Assistant.
-    The assistant can process your queries and respond based on its training data and the image provided.
-    """
-)
+st.set_page_config(page_title="CIT Alumni ECM Assistant", page_icon="🎓", layout="wide")
+st.title("CIT Alumni ECM Assistant")
+st.markdown("Ask me anything about CIT Alumni ECM!")
 
 # Define a session state to track chat history
 if 'messages' not in st.session_state:

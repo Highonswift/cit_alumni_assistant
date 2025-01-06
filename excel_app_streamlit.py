@@ -32,14 +32,6 @@ st.set_page_config(page_title="CIT Alumni Assistant", page_icon="📊", layout="
 st.title("CIT Alumni Assistant")
 st.markdown("Ask me anything about CIT Alumni!")
 
-# Display instructions in the sidebar
-st.sidebar.header("Instructions")
-st.sidebar.write(
-    """
-    The CIT Alumni Assistant is ready to assist you. Below is the information extracted from the CIT Alumni Selection Excel file. 
-    Ask your questions based on the content of the document.
-    """
-)
 
 # Define a session state to track chat history
 if 'messages' not in st.session_state:
